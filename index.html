@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iCore | iPhones de exhibición y accesorios originales</title>
+<meta name="description" content="iCore - iPhones de exhibición, accesorios originales, confianza y garantía. Tiendas en Chía y Arauca, Colombia.">
+<link rel="icon" href="assets/logo-crop-raw.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <img src="assets/logo-crop-raw.png" alt="iCore" class="brand-logo">
+      <span class="brand-name">iCore</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#confianza">Garantía</a>
+      <a href="#ubicaciones">Ubicaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-whatsapp header-cta" id="wsp-header" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.687 4.564 1.874 6.42L4 29l7.79-1.842A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3Zm6.564 16.9c-.276.777-1.62 1.487-2.226 1.578-.567.086-1.286.122-2.075-.13-.478-.153-1.093-.357-1.885-.7-3.32-1.434-5.49-4.77-5.657-5.001-.166-.232-1.354-1.8-1.354-3.433 0-1.633.856-2.437 1.16-2.77.303-.333.663-.416.884-.416.221 0 .442.002.634.012.203.01.475-.077.743.567.276.663.938 2.298 1.021 2.464.083.166.138.36.028.578-.111.22-.166.354-.332.545-.166.19-.35.425-.5.572-.166.16-.34.334-.146.667.194.333.86 1.43 1.847 2.316 1.27 1.14 2.34 1.494 2.68 1.66.34.166.539.14.738-.084.199-.223.85-.987 1.077-1.325.227-.338.454-.28.766-.168.312.111 1.98.938 2.32 1.108.34.17.567.256.65.4.083.144.083.834-.193 1.611Z"/></svg>
+      Escríbenos
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Chía · Arauca — Colombia</p>
+        <h1>iPhones de exhibición<br>al mejor precio, <span class="accent">con garantía real.</span></h1>
+        <p class="hero-sub">Equipos originales, revisados y certificados por nuestro equipo. Accesorios 100% originales. Compra con confianza en iCore.</p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+          <a class="btn btn-outline" id="wsp-hero" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge"><strong>+150</strong><span>equipos entregados</span></div>
+          <div class="badge"><strong>11.4k</strong><span>seguidores en Instagram</span></div>
+          <div class="badge"><strong>2</strong><span>tiendas físicas</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero-iphone.jpg" alt="iPhone de exhibición iCore" width="1152" height="1536">
+      </div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="container categories-grid">
+      <div class="category-card">
+        <div class="category-icon">📱</div>
+        <h3>iPhone de exhibición</h3>
+        <p>Equipos revisados técnicamente, batería certificada y estética impecable.</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">🎧</div>
+        <h3>Accesorios originales</h3>
+        <p>Cargadores, cables, audífonos y protectores 100% originales.</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">🛡️</div>
+        <h3>Confianza + Garantía</h3>
+        <p>Todos nuestros equipos cuentan con garantía escrita iCore.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalogo">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nuestro catálogo</h2>
+        <p>Precios de referencia. Disponibilidad e inventario sujetos a cambios — confírmalo por WhatsApp.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="iphones">iPhones</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <!-- Las tarjetas de producto se generan desde data/products.json -->
+      </div>
+    </div>
+  </section>
+
+  <section class="confianza" id="confianza">
+    <div class="container confianza-inner">
+      <div class="confianza-text">
+        <h2>Compra con confianza total</h2>
+        <p>En iCore cada equipo pasa por un proceso de revisión antes de llegar a tus manos. Así garantizamos tu tranquilidad:</p>
+        <ul class="check-list">
+          <li>Revisión técnica de batería, pantalla y funciones antes de la venta.</li>
+          <li>Garantía escrita en cada equipo y accesorio.</li>
+          <li>Accesorios 100% originales, nunca genéricos.</li>
+          <li>Atención personalizada por WhatsApp e Instagram.</li>
+        </ul>
+        <a class="btn btn-primary" id="wsp-confianza" target="_blank" rel="noopener">Hablar con un asesor</a>
+      </div>
+      <div class="confianza-stat">
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Equipos revisados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">11.4k+</span>
+          <span class="stat-label">Clientes en la comunidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ubicaciones" id="ubicaciones">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nuestras tiendas</h2>
+        <p>Visítanos o hablemos primero por WhatsApp para confirmar disponibilidad.</p>
+      </div>
+      <div class="store-grid">
+        <div class="store-card">
+          <h3>iCore Chía</h3>
+          <p>Cundinamarca — Centro Comercial Santa Lucía</p>
+          <a class="store-link" id="wsp-chia" target="_blank" rel="noopener">Escribir a esta tienda →</a>
+        </div>
+        <div class="store-card">
+          <h3>iCore Arauca</h3>
+          <p>Arauca — Carrera 20 #22-60</p>
+          <a class="store-link" id="wsp-arauca" target="_blank" rel="noopener">Escribir a esta tienda →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final" id="contacto">
+    <div class="container cta-final-inner">
+      <h2>¿Buscas tu próximo iPhone?</h2>
+      <p>Escríbenos ahora y te ayudamos a encontrar el equipo perfecto para ti.</p>
+      <a class="btn btn-primary btn-lg" id="wsp-final" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      <a class="social-link" href="https://www.instagram.com/icore_bg" target="_blank" rel="noopener">Síguenos en Instagram @icore_bg</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-crop-raw.png" alt="iCore" class="brand-logo">
+      <span>iCore</span>
+    </div>
+    <p>© <span id="year"></span> iCore. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/icore_bg" target="_blank" rel="noopener">Instagram</a>
+      <a id="wsp-footer" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wsp-float" id="wsp-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.687 4.564 1.874 6.42L4 29l7.79-1.842A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3Zm6.564 16.9c-.276.777-1.62 1.487-2.226 1.578-.567.086-1.286.122-2.075-.13-.478-.153-1.093-.357-1.885-.7-3.32-1.434-5.49-4.77-5.657-5.001-.166-.232-1.354-1.8-1.354-3.433 0-1.633.856-2.437 1.16-2.77.303-.333.663-.416.884-.416.221 0 .442.002.634.012.203.01.475-.077.743.567.276.663.938 2.298 1.021 2.464.083.166.138.36.028.578-.111.22-.166.354-.332.545-.166.19-.35.425-.5.572-.166.16-.34.334-.146.667.194.333.86 1.43 1.847 2.316 1.27 1.14 2.34 1.494 2.68 1.66.34.166.539.14.738-.084.199-.223.85-.987 1.077-1.325.227-.338.454-.28.766-.168.312.111 1.98.938 2.32 1.108.34.17.567.256.65.4.083.144.083.834-.193 1.611Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

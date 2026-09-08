@@ -1,0 +1,112 @@
+[
+  {
+    "id": "iphone-12-128",
+    "categoria": "iphones",
+    "nombre": "iPhone 12 128GB",
+    "condicion": "Exhibición",
+    "precio": 1450000,
+    "precioAnterior": 1700000,
+    "descripcion": "iPhone 12 de exhibición, estado impecable, incluye cargador y garantía iCore.",
+    "imagen": "",
+    "destacado": false
+  },
+  {
+    "id": "iphone-13-128",
+    "categoria": "iphones",
+    "nombre": "iPhone 13 128GB",
+    "condicion": "Exhibición",
+    "precio": 1750000,
+    "precioAnterior": 2050000,
+    "descripcion": "iPhone 13 de exhibición, estado impecable, incluye cargador y garantía iCore.",
+    "imagen": "",
+    "destacado": true
+  },
+  {
+    "id": "iphone-14-128",
+    "categoria": "iphones",
+    "nombre": "iPhone 14 128GB",
+    "condicion": "Exhibición",
+    "precio": 2200000,
+    "precioAnterior": 2550000,
+    "descripcion": "iPhone 14 de exhibición, batería al 100%, caja sellada de accesorios.",
+    "imagen": "",
+    "destacado": true
+  },
+  {
+    "id": "iphone-15-128",
+    "categoria": "iphones",
+    "nombre": "iPhone 15 128GB",
+    "condicion": "Exhibición",
+    "precio": 3100000,
+    "precioAnterior": 3500000,
+    "descripcion": "iPhone 15 de exhibición, USB-C, disponible en varios colores.",
+    "imagen": "",
+    "destacado": true
+  },
+  {
+    "id": "iphone-15-pro-128",
+    "categoria": "iphones",
+    "nombre": "iPhone 15 Pro 128GB",
+    "condicion": "Exhibición",
+    "precio": 4200000,
+    "precioAnterior": 4700000,
+    "descripcion": "iPhone 15 Pro de exhibición, chasis de titanio, estado impecable.",
+    "imagen": "",
+    "destacado": false
+  },
+  {
+    "id": "cargador-20w",
+    "categoria": "accesorios",
+    "nombre": "Cargador USB-C 20W Original",
+    "condicion": "Nuevo",
+    "precio": 90000,
+    "precioAnterior": null,
+    "descripcion": "Cargador rápido original, compatible con toda la línea iPhone.",
+    "imagen": "",
+    "destacado": false
+  },
+  {
+    "id": "cable-usbc",
+    "categoria": "accesorios",
+    "nombre": "Cable USB-C Original 1m",
+    "condicion": "Nuevo",
+    "precio": 60000,
+    "precioAnterior": null,
+    "descripcion": "Cable de carga y datos, certificado, alta durabilidad.",
+    "imagen": "",
+    "destacado": false
+  },
+  {
+    "id": "audifonos-pro",
+    "categoria": "accesorios",
+    "nombre": "Audífonos Pro Inalámbricos",
+    "condicion": "Nuevo",
+    "precio": 650000,
+    "precioAnterior": null,
+    "descripcion": "Cancelación de ruido activa, estuche de carga incluido, garantía iCore.",
+    "imagen": "",
+    "destacado": true
+  },
+  {
+    "id": "protector-vidrio",
+    "categoria": "accesorios",
+    "nombre": "Protector de Vidrio Templado",
+    "condicion": "Nuevo",
+    "precio": 25000,
+    "precioAnterior": null,
+    "descripcion": "Instalación incluida en tienda, alta resistencia a rayones.",
+    "imagen": "",
+    "destacado": false
+  },
+  {
+    "id": "case-silicona",
+    "categoria": "accesorios",
+    "nombre": "Case de Silicona Premium",
+    "condicion": "Nuevo",
+    "precio": 45000,
+    "precioAnterior": null,
+    "descripcion": "Varios colores disponibles, ajuste perfecto y acabado suave.",
+    "imagen": "",
+    "destacado": false
+  }
+]
