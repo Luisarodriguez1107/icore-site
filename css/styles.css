@@ -219,6 +219,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   justify-content: center;
   animation: hero-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  perspective: 1200px;
 }
 
 .hero-media::before {
@@ -238,6 +239,9 @@ img { max-width: 100%; display: block; }
   height: auto;
   border-radius: 28px;
   box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes hero-rise {

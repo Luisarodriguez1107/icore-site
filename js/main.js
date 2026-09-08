@@ -94,6 +94,50 @@ async function loadProducts() {
   });
 }
 
+function wireHeroParallax() {
+  const media = document.querySelector(".hero-media");
+  const img = media?.querySelector("img");
+  if (!media || !img) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  let scrollProgress = 0;
+  let tiltX = 0;
+  let tiltY = 0;
+
+  function applyTransform() {
+    const floatY = (1 - scrollProgress) * 18;
+    const scale = 0.97 + scrollProgress * 0.03;
+    img.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(${floatY}px) scale(${scale})`;
+  }
+
+  function onScroll() {
+    const rect = media.getBoundingClientRect();
+    const raw = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+    scrollProgress = Math.min(Math.max(raw, 0), 1);
+    applyTransform();
+  }
+
+  function onMouseMove(e) {
+    const rect = media.getBoundingClientRect();
+    const relX = (e.clientX - rect.left) / rect.width - 0.5;
+    const relY = (e.clientY - rect.top) / rect.height - 0.5;
+    tiltY = relX * 16;
+    tiltX = -relY * 16;
+    applyTransform();
+  }
+
+  function onMouseLeave() {
+    tiltX = 0;
+    tiltY = 0;
+    applyTransform();
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  media.addEventListener("mousemove", onMouseMove);
+  media.addEventListener("mouseleave", onMouseLeave);
+  onScroll();
+}
+
 function wireMobileNav() {
   const toggle = document.getElementById("nav-toggle");
   const nav = document.getElementById("main-nav");
@@ -107,4 +151,5 @@ document.getElementById("year") && (document.getElementById("year").textContent 
 
 wireWhatsappLinks();
 wireMobileNav();
+wireHeroParallax();
 loadProducts();
