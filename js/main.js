@@ -116,8 +116,52 @@ function wireMegaMenu() {
   backdrop?.addEventListener("click", close);
 }
 
+function wireMegaFoxVideo() {
+  const video = document.getElementById("mega-fox-video");
+  const canvas = document.getElementById("mega-fox-canvas");
+  if (!video || !canvas) return;
+
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+  function resizeCanvas() {
+    if (video.videoWidth && video.videoHeight) {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+    }
+  }
+
+  function draw() {
+    if (video.readyState >= 2 && canvas.width > 0) {
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      try {
+        const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const d = frame.data;
+        for (let i = 0; i < d.length; i += 4) {
+          const r = d[i], g = d[i + 1], b = d[i + 2];
+          const whiteness = Math.min(r, g, b);
+          if (whiteness > 232) {
+            d[i + 3] = 0;
+          } else if (whiteness > 185) {
+            d[i + 3] = Math.round((255 * (232 - whiteness)) / (232 - 185));
+          }
+        }
+        ctx.putImageData(frame, 0, 0);
+      } catch (e) {
+        canvas.style.display = "none";
+        video.style.display = "block";
+        return;
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+
+  video.addEventListener("loadedmetadata", resizeCanvas);
+  requestAnimationFrame(draw);
+}
+
 document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
 
 wireWhatsappLinks();
 wireMegaMenu();
+wireMegaFoxVideo();
 loadProducts();

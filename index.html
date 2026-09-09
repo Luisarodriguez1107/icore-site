@@ -18,7 +18,7 @@
   <section class="mega-hero" id="inicio">
     <nav class="mega-nav">
       <a href="#inicio" class="mega-logo">
-        <img src="assets/logo-crop-raw.png" alt="iCore" class="mega-logo-img">
+        <div class="mega-logo-img" role="img" aria-label="iCore"></div>
         <span class="mega-logo-text">iCore</span>
       </a>
       <div class="mega-links">
@@ -42,7 +42,7 @@
       <div class="mega-panel">
         <div class="mega-panel-header">
           <div class="mega-logo">
-            <img src="assets/logo-crop-raw.png" alt="iCore" class="mega-logo-img">
+            <div class="mega-logo-img" role="img" aria-label="iCore"></div>
             <span class="mega-logo-text">iCore</span>
           </div>
           <button class="mega-close-btn" id="mega-menu-close" aria-label="Cerrar menú">
@@ -65,6 +65,13 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <div class="mega-media-wrap">
+      <video id="mega-fox-video" autoplay loop muted playsinline crossorigin="anonymous" style="display:none;">
+        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260713_234424_b1332b69-2e69-4302-8dbc-40f86846afbd.mp4">
+      </video>
+      <canvas id="mega-fox-canvas" class="mega-fox-canvas" aria-hidden="true"></canvas>
     </div>
 
     <div class="mega-bottom">
