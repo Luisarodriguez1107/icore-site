@@ -94,17 +94,30 @@ async function loadProducts() {
   });
 }
 
-function wireMobileNav() {
-  const toggle = document.getElementById("nav-toggle");
-  const nav = document.getElementById("main-nav");
-  if (!toggle || !nav) return;
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
+function wireMegaMenu() {
+  const overlay = document.getElementById("mega-menu");
+  const openBtn = document.getElementById("mega-menu-open");
+  const closeBtn = document.getElementById("mega-menu-close");
+  const backdrop = overlay?.querySelector(".mega-overlay-backdrop");
+  if (!overlay || !openBtn) return;
+
+  function open() {
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function close() {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  openBtn.addEventListener("click", open);
+  closeBtn?.addEventListener("click", close);
+  backdrop?.addEventListener("click", close);
 }
 
 document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
 
 wireWhatsappLinks();
-wireMobileNav();
+wireMegaMenu();
 loadProducts();
